@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReviewsCarousel } from './ReviewsCarousel';
 import { ReviewsCTA } from './ReviewsCTA';
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Calendar, Heart, Shield } from "lucide-react";
 
 export function Hero() {

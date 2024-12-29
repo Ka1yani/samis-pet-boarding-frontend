@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ReviewCard } from './ReviewCard';
 import { useReviews } from '../../hooks/useReviews';

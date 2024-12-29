@@ -1,4 +1,3 @@
-import React from 'react';
 import { ServiceGrid } from './ServiceGrid';
 
 export function ServicesSection() {
