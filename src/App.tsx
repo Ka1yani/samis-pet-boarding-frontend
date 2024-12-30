@@ -1,22 +1,18 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Header } from './components/layout/Header';
 import { HomePage } from './pages/HomePage';
-// import { BookingPage } from './pages/BookingPage';
-// import { LoginPage } from './pages/auth/LoginPage';
-// import { SignupPage } from './pages/auth/SignupPage';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/booking" element={<BookingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} /> */}
-      </Routes>
-    </div>
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+          <Header />
+          <HomePage />
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
