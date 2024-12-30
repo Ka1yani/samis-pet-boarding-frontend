@@ -1,4 +1,3 @@
-import React from 'react';
 import { Instagram } from 'lucide-react';
 import { Platform } from '../../types/review';
 
@@ -14,7 +13,7 @@ export function PlatformBadge({ platform }: PlatformBadgeProps) {
       case 'google':
         return (
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
             alt="Google"
             className="h-4 w-4"
           />

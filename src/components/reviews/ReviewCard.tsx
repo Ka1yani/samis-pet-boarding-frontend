@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Star, Instagram } from 'lucide-react';
+import  { useState } from 'react';
+import { Star } from 'lucide-react';
 import { Review } from '../../types/review';
 import { PlatformBadge } from './PlatformBadge';
 
@@ -30,7 +30,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
                 <Star
                   key={i}
                   className={`h-4 w-4 ${
-                    i < review.rating
+                    i < (review.rating ?? 5) 
                       ? 'text-yellow-400 fill-current'
                       : 'text-gray-300'
                   }`}

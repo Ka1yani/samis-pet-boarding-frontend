@@ -7,7 +7,7 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+        <div className=" bg-white dark:bg-gray-900 transition-colors">
           <Header />
           <HomePage />
         </div>
